@@ -24,9 +24,9 @@ const checkSlide = () => {
     let imageEnd = window.scrollY < imageBottom;
 
     if (imageStart && imageEnd) {
-      image.classList.add('active');
+      image.classList.remove('hidden');
     } else {
-      image.classList.remove('active');
+      image.classList.add('hidden');
     }
   })
 }
