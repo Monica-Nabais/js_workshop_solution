@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+}
+
+.menu-icon {
+  position: absolute;
+  color: white;
+  top: 15px;
+  left: 15px;
+  font-size: 32px;
+}
+
+.navbar {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 80%;
+  margin: 0 50px;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.hidden {
+  right: 100px;
+  opacity: 0;
+}
+
+.banner-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('images/house-2.jpeg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transition: top linear;
+}
+
+.banner {
+  background-color: transparent;
+  height: 90vh;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 3px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 64px;
+}
+
+.banner p {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+.banner .location-input {
+  padding-left: 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  margin-right: 10px;
+  margin-top: 100px;
+  color: white;
+}
+
+.banner .location-input::placeholder {
+  font-weight: lighter;
+  color: white;
+}
+
+button {
+  background: #0f8c3f;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+.container {
+  background: white;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  overflow: hidden;
+  opacity: 0;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.left {
+  left: 100%;
+}
+
+.right {
+  right: 100%;
+}
+
+.left.active {
+  opacity: 1;
+  left: 0;
+}
+
+.right.active {
+  opacity: 1;
+  right: 0;
+}
+
+.image .img {
+  height: 200px;
+  width: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgb(210, 210, 210), -5px -5px 10px rgb(210, 210, 210);
+}
+
+.image .image-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image .image-content.align-right {
+  text-align: right;
+}
+
+.image .image-content p {
+  margin: 0;
+  font-weight: lighter;
+}
+
+.image .image-content h3 {
+  margin-top: 0;
+}
+
+.images-grid {
+  padding: 80px 150px;
+}
+
+.inset-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.inset-img img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  transition: top linear;
+}
+
+.contact {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.contact > * {
+  flex: 50%;
+  margin: 50px;
+  z-index: 1;
+}
+
+.contact h2 {
+  color: white;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.text-input {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: inset 1px 1px 3px grey;
+  padding: 5px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 50px;
+}
+
+.review {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(210, 210, 210), -5px -5px 10px rgb(210, 210, 210);
+  padding: 20px;
+  width: 250px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  height: 60px;
+  width: 60px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.fa-star {
+  color: #ffe900;
+}
+
+.footer {
+  text-align: end;
+  padding: 20px;
+  background: lightgrey;
+}
+
+.red-heart {
+  color: red;
+}

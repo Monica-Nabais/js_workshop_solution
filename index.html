@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JS App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d53cbda4ad.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="banner-background"></div>
+    <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+    <div class="navbar hidden">
+      <p>Our story</p>
+      <p>Houses</p>
+      <p>Blog</p>
+      <p>Contact us</p>
+    </div>
+    <div class="banner">
+      <h1>Rent Experience</h1>
+      <p>With us you're not just renting a place to stay, you're renting a lifestyle</p>
+      <div>
+        <input type="text" placeholder="Search by location..." class="location-input">
+        <button type="button" name="button">Search</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="images-grid">
+        <div class="image left">
+          <div class="img" style="background-image: url('images/beach-house.jpeg')"></div>
+          <div class="image-content">
+            <h3>Beach</h3>
+            <p>Have a rest near the least known beaches. Avoid the traffic and the overpopulated beaches.</p>
+          </div>
+        </div>
+        <div class="image right">
+          <div class="image-content align-right">
+            <h3>Countryside</h3>
+            <p>Grab a book and a glass of wine and enjoy a few days in the calmness of the countryside.</p>
+          </div>
+          <div class="img" style="background-image: url('images/countryside-house.jpeg')"></div>
+        </div>
+        <div class="image left">
+          <div class="img" style="background-image: url('images/snow-house.jpeg')"></div>
+          <div class="image-content">
+            <h3>Snow</h3>
+            <p>You don't need to wait for the Summer to enjoy a nice vacation. Let it go!</p>
+          </div>
+        </div>
+        <div class="image right">
+          <div class="image-content align-right">
+            <h3>Urban</h3>
+            <p>If you're in need of some movement, we got your back as well.</p>
+          </div>
+          <div class="img" style="background-image: url('images/village-house.jpeg')"></div>
+        </div>
+      </div>
+
+      <div class="inset-img">
+        <img src="images/house-1.jpeg" alt="">
+        <div class="contact">
+          <h2>Get in touch with us!</h2>
+          <form>
+            <input class="text-input" type="text" name="first_name" placeholder="First name">
+            <br>
+            <input class="text-input" type="text" name="last_name" placeholder="Last name">
+            <br>
+            <input class="text-input" type="text" name="email" placeholder="Your email">
+            <br>
+            <button type="button" name="button">Submit</button>
+
+          </form>
+
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="review">
+          <div class="user">
+            <div style="background-image: url('images/user1.jpg')" class="avatar"></div>
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p>I had an amazing experience!</p>
+        </div>
+        <div class="review">
+          <div class="user">
+            <div style="background-image: url('images/user1.jpg')" class="avatar"></div>
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p>The house we rented was perfect to relax and enjoy some quiet time</p>
+        </div>
+        <div class="review">
+          <div class="user">
+            <div style="background-image: url('images/user1.jpg')" class="avatar"></div>
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p>I'd never felt so much 'at home' on vacation</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Made with <i class="fas fa-heart red-heart"></i> by Le Wagon</span>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
